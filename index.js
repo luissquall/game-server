@@ -1,7 +1,14 @@
 var Hapi = require('hapi');
 
 // Create a server with a host and port
-var server = new Hapi.Server();
+// https://github.com/hapijs/discuss/issues/57#issuecomment-68357551
+var server = new Hapi.Server({
+	connections: {
+		routes: {
+			cors: true
+		}
+	}
+});
 server.connection({
 	host: '0.0.0.0',
 	port: ~~process.env.PORT || 5000
