@@ -1,14 +1,14 @@
 {
 	"World": {
 		"image": {
-			"src": "http://{{host}}/img/tile.png"
+			"src": "{{protocol}}://{{host}}/img/tile.png"
 		}
 	},
 	"Characters": [
 		{
 			"name": "Casandra",
 			"image": {
-				"src": "http://{{host}}/img/characters.png"
+				"src": "{{protocol}}://{{host}}/img/characters.png"
 			},
 			"positions": {
 				"down": {
@@ -40,7 +40,7 @@
 		{
 			"name": "Siegfried",
 			"image": {
-				"src": "http://{{host}}/img/characters.png"
+				"src": "{{protocol}}://{{host}}/img/characters.png"
 			},
 			"positions": {
 				"down": {
@@ -73,11 +73,11 @@
 	"Audio": {
 		"src": [
 			{
-				"url": "http://{{host}}/audio/tick.m4a",
+				"url": "{{protocol}}://{{host}}/audio/tick.m4a",
 				"type": "audio/mp4"
 			},
 			{
-				"url": "http://{{host}}/audio/tick.mp3",
+				"url": "{{protocol}}://{{host}}/audio/tick.mp3",
 				"type": "audio/mpeg"
 			}
 		]

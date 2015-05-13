@@ -19,8 +19,12 @@ server.route({
 	method: 'GET',
 	path: '/games/1',
 	handler: function (request, reply) {
-		var data = JSON.stringify(require('./game.json'))
-					.replace(/{{host}}/g, request.info.host);
+		var data;
+		var proto = request.headers['x-forwarded-proto'] ? request.headers['x-forwarded-proto'] : request.server.info.protocol;
+
+		data = JSON.stringify(require('./game.json'))
+				.replace(/{{host}}/g, request.info.host)
+				.replace(/{{protocol}}/g, proto);
 
 		reply(data);
 	}
