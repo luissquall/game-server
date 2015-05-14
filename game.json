@@ -68,6 +68,38 @@
 					"height": 41
 				}
 			}
+		},
+		{
+			"name": "Tom",
+			"image": {
+				"src": "{{protocol}}://{{host}}/img/characters.png"
+			},
+			"positions": {
+				"down": {
+					"x": 194,
+					"y": 5,
+					"width": 29,
+					"height": 42
+				},
+				"left": {
+					"x": 197,
+					"y": 53,
+					"width": 28,
+					"height": 42
+				},
+				"right": {
+					"x": 192,
+					"y": 101,
+					"width": 28,
+					"height": 42
+				},
+				"up": {
+					"x": 194,
+					"y": 149,
+					"width": 27,
+					"height": 42
+				}
+			}
 		}
 	],
 	"Audio": {
